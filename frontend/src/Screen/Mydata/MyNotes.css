@@ -1,0 +1,101 @@
+.table-container1 {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    text-align: justify;
+    color: black;
+}
+
+.column1 {
+    width: 60%;
+    font-size: 1.1rem;
+    padding: 0px 50px;
+    margin-bottom: 0px;
+    /* Set the width of each column */
+}
+
+.body {
+    padding: 340px 0px;
+    height: 2030px;
+
+}
+
+.table1 {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+
+
+}
+
+table {
+    font-family: arial, sans-serif;
+    font-size: 1.2rem;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+th,
+td {
+    text-align: justify;
+    padding: 2px;
+    /* Add 8px padding to all cells */
+    width: 10%;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 1;
+    padding: 0px 10px;
+    margin-bottom: 20px;
+}
+
+.list-item {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+/* Media query for screens with a maximum width of 768px (typical mobile size) */
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+        /* Stack columns vertically */
+    }
+
+    .column {
+        padding: 0px;
+        margin-bottom: 10px;
+    }
+
+    .table-container1 {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 50px;
+        text-align: justify;
+        color: black;
+    }
+
+    .column1 {
+        width: 60%;
+        font-size: 1.3rem;
+        padding: 0px 100px;
+        /* Set the width of each column */
+    }
+
+    .body {
+        padding: 250px 10px;
+        height: 1430px;
+
+    }
+
+    .table1 {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+
+
+    }
+}
