@@ -18,35 +18,38 @@ function Header({setSearch}) {
     }
 
     return (
-        <>        {userInfo ? <Navbar expand="lg" bg="" variant="light">
+        <>
+            {userInfo ? <Navbar expand="lg" bg="" variant="light">
             
-            <Container fluid>
-                <Navbar className="bg-inherit justify-content-between ml-auto">
-                <Form inline>
-                    <InputGroup size="lg">
-                        <Form.Control
-                            placeholder=""
-                            aria-label=""
-                            aria-describedby="basic-addon1"
-                            onChange={(e) => setSearch(e.target.value)}
-                        />
-                        <InputGroup.Text id="basic-addon1" className='bg-warning'>Search</InputGroup.Text>
-                    </InputGroup>
-                    </Form>
-                </Navbar>
-             
-             
-                <Navbar expand="sm" variant="light" bg="">
+                <Container fluid>
+                    <Navbar className="bg-inherit justify-content-between ml-auto">
+                        <Form inline>
+                            <InputGroup size="md">
+                                <Form.Control
+                                    placeholder=""
+                                    aria-label=""
+                                    aria-describedby="basic-addon1"
+                                    onChange={(e) => setSearch(e.target.value)}
+                                />
+                                <InputGroup.Text id="basic-addon1" className='bg-warning'>Search</InputGroup.Text>
+                            </InputGroup>
+                        </Form>
+                    </Navbar>
+                
+
+                <Navbar expand="sm" variant="dark" bg='info'>
                     <Navbar.Toggle aria-controls="navbar-nav" />
                     <Navbar.Collapse id="navbar-nav">
                         <Nav className="ml-auto text-center">
-                            <NavLink className="mx-2" href="/mydata"><b>Clients</b></NavLink>
-                            <NavLink className="mx-2" href="/profile"><b>{userInfo?.name}</b></NavLink>
-                            <NavLink className="mx-2" onClick={logoutHandler}><b>Logout</b></NavLink>
+                            <NavLink className="mx-2" href="/mydata">Clients</NavLink>
+                            <NavLink className="mx-2" href="/profile">{userInfo?.name}</NavLink>
+                            <NavLink className="mx-2" onClick={logoutHandler}>Logout</NavLink>
                         </Nav>
                     </Navbar.Collapse>
-                </Navbar>
+                    </Navbar>
+                    
             </Container>
+
         </Navbar> : <Nav>
 
         </Nav>}

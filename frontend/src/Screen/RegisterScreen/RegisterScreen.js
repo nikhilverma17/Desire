@@ -127,7 +127,7 @@ function RegisterScreen() {
                 <Row className="my-2">
                     <Col>
                         Already a user ?{" "}
-                        <Link to="/login" style={{ textDecoration: "none" }}>
+                        <Link to="/login">
                             Login here
                         </Link>
                     </Col>

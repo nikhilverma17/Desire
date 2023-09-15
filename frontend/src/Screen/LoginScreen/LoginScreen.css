@@ -3,6 +3,7 @@ body{
         background-position: center;
         background-size: cover;
         font-size: 20px;
+        color: rgb(24, 25, 23);
         
 }
 .loginContainer {
@@ -10,9 +11,13 @@ body{
     flex-direction: column;
     margin: 20px;
     
+    
 }
 a{
-    color: black;
-    text-decoration: none;
+    color: rgb(5, 0, 0);
+    text-decoration: underline;
     
+}
+.loginContainer{
+    font-weight: bold;
 }

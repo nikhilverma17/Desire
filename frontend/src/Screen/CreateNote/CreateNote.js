@@ -23,51 +23,35 @@ const CreateNote = () => {
     const [cpassportnumber, setCpassportnumber] = useState("");
     const [cmaritalstatus, setCmaritalstatus] = useState("");
     const [cmarrigedate, setCmarrigedate] = useState("");
+
     const [sname, setSname] = useState("");
     const [sdob, setSdob] = useState("");
-    const [semail, setSemail] = useState("");
-    const [smobile, setSmobile] = useState("");
     const [saddress, setSaddress] = useState("");
     const [soccupation, setSoccupation] = useState("");
-    const [spassport, setSpassport] = useState("");
+
     const [fname, setFname] = useState("");
     const [fdob, setFdob] = useState("");
     const [fdod, setFdod] = useState("");
-    const [fmobile, setFmobile] = useState("");
     const [faddress, setFaddress] = useState("");
     const [foccupation, setFoccupation] = useState("");
-    const [fpassportnumber, setFpassportnumber] = useState("");
+
     const [mname, setMname] = useState("");
     const [mdob, setMdob] = useState("");
     const [mdod, setMdod] = useState("");
-    const [mmobile, setMmobile] = useState("");
     const [maddress, setMaddress] = useState("");
     const [moccupation, setMoccupation] = useState("");
-    const [mpassportnumber, setMpassportnumber] = useState("");
+
     const [childname, setChildname] = useState("");
-    const [childdob, setChilddob] = useState("");
-    const [childmobile, setChildmobile] = useState("");
-    const [childaddress, setChildaddress] = useState("");
-    const [childoccupation, setChildoccupation] = useState("");
-    const [childpassportnumber, setChildpassportnumber] = useState("");
+
     const [broname, setBroname] = useState("");
-    const [brodob, setBrodob] = useState("");
-    const [bromobile, setBromobile] = useState("");
-    const [broaddress, setBroaddress] = useState("");
-    const [brooccupation, setBrooccupation] = useState("");
-    const [bropassportnumber, setBropassportnumber] = useState("");
+
     const [sisname, setSisname] = useState("");
-    const [sisdob, setSisdob] = useState("");
-    const [sismobile, setSismobile] = useState("");
-    const [sisaddress, setSisaddress] = useState("");
-    const [sisoccupation, setSisoccupation] = useState("");
-    const [sispassportnumber, setSispassportnumber] = useState("");
+
     const [spname, setSpname] = useState("");
     const [sprelationship, setSprelationship] = useState("");
-    const [spmobile, setSpmobile] = useState("");
     const [spaddress, setSpaddress] = useState("");
     const [spoccupation, setSpoccupation] = useState("");
-    const [sppassportnumber, setSppassportnumber] = useState("");
+
 
 
     const dispatch = useDispatch();
@@ -92,49 +76,26 @@ const CreateNote = () => {
         setCmarrigedate("");
         setSname("");
         setSdob("");
-        setSemail("");
-        setSmobile("");
         setSaddress("");
         setSoccupation("");
-        setSpassport("");
         setFname("");
         setFdob("");
         setFdod("");
-        setFmobile("");
         setFaddress("");
         setFoccupation("");
-        setFpassportnumber("");
         setMname("");
         setMdob("");
         setMdod("");
-        setMmobile("");
         setMaddress("");
         setMoccupation("");
-        setMpassportnumber("");
         setChildname("");
-        setChilddob("");
-        setChildmobile("");
-        setChildaddress("");
-        setChildoccupation("");
-        setChildpassportnumber("");
         setBroname("");
-        setBrodob("");
-        setBromobile("");
-        setBroaddress("");
-        setBrooccupation("");
-        setBropassportnumber("");
         setSisname("");
-        setSisdob("");
-        setSismobile("");
-        setSisaddress("");
-        setSisoccupation("");
-        setSispassportnumber("");
         setSpname("");
         setSprelationship("");
-        setSpmobile("");
         setSpaddress("");
         setSpoccupation("");
-        setSppassportnumber("");
+
     };
 
     const submitHandler = (e) => {
@@ -150,49 +111,25 @@ const CreateNote = () => {
             !cmarrigedate ||
             !sname ||
             !sdob ||
-            !semail ||
-            !smobile ||
             !saddress ||
             !soccupation ||
-            !spassport ||
             !fname ||
             !fdob ||
             !fdod ||
-            !fmobile ||
             !faddress ||
             !foccupation ||
-            !fpassportnumber ||
             !mname ||
             !mdob ||
             !mdod ||
-            !mmobile ||
             !maddress ||
             !moccupation ||
-            !mpassportnumber ||
             !childname ||
-            !childdob ||
-            !childmobile ||
-            !childaddress ||
-            !childoccupation ||
-            !childpassportnumber ||
             !broname ||
-            !brodob ||
-            !bromobile ||
-            !broaddress ||
-            !brooccupation ||
-            !bropassportnumber ||
             !sisname ||
-            !sisdob ||
-            !sismobile ||
-            !sisaddress ||
-            !sisoccupation ||
-            !sispassportnumber ||
             !spname ||
             !sprelationship ||
-            !spmobile ||
             !spaddress ||
-            !spoccupation ||
-            !sppassportnumber
+            !spoccupation
         )
             return;
         dispatch(createNoteAction(
@@ -207,49 +144,25 @@ const CreateNote = () => {
             cmarrigedate,
             sname,
             sdob,
-            semail,
-            smobile,
             saddress,
-            soccupation,
-            spassport,
+            soccupation,            
             fname,
             fdob,
-            fdod,
-            fmobile,
+            fdod,            
             faddress,
-            foccupation,
-            fpassportnumber,
+            foccupation,            
             mname,
             mdob,
-            mdod,
-            mmobile,
+            mdod,            
             maddress,
-            moccupation,
-            mpassportnumber,
-            childname,
-            childdob,
-            childmobile,
-            childaddress,
-            childoccupation,
-            childpassportnumber,
-            broname,
-            brodob,
-            bromobile,
-            broaddress,
-            brooccupation,
-            bropassportnumber,
+            moccupation,           
+            childname,            
+            broname,           
             sisname,
-            sisdob,
-            sismobile,
-            sisaddress,
-            sisoccupation,
-            sispassportnumber,
             spname,
-            sprelationship,
-            spmobile,
+            sprelationship,            
             spaddress,
-            spoccupation,
-            sppassportnumber
+            spoccupation
 
         ));
         resetHandler();
@@ -341,7 +254,7 @@ const CreateNote = () => {
                         <Form.Group controlId="cmarrigedate" className="mb-4">
                             <Form.Label>Marrige Date</Form.Label>
                             <Form.Control
-                                type="date"
+                                type="text"
                                 value={cmarrigedate}
                                 onChange={(e) => setCmarrigedate(e.target.value)}
                             />
@@ -358,26 +271,9 @@ const CreateNote = () => {
                         <Form.Group controlId="sdob" className="mb-4">
                             <Form.Label>Spouse DOB</Form.Label>
                             <Form.Control
-                                type="date"
+                                type="text"
                                 value={sdob}
                                 onChange={(e) => setSdob(e.target.value)}
-                            />
-                        </Form.Group>
-                        <Form.Group controlId="semail" className="mb-4">
-                            <Form.Label>Spouse Email</Form.Label>
-                            <Form.Control
-                                type="text"
-                                value={semail}
-
-                                onChange={(e) => setSemail(e.target.value)}
-                            />
-                        </Form.Group>
-                        <Form.Group controlId="smobile" className="mb-4">
-                            <Form.Label>Spouse Mobile</Form.Label>
-                            <Form.Control
-                                type="number"
-                                value={smobile}
-                                onChange={(e) => setSmobile(e.target.value)}
                             />
                         </Form.Group>
                         <Form.Group controlId="saddress" className="mb-4">
@@ -396,14 +292,6 @@ const CreateNote = () => {
                                 onChange={(e) => setSoccupation(e.target.value)}
                             />
                         </Form.Group>
-                        <Form.Group controlId="spassport" className="mb-4">
-                            <Form.Label>Spouse Passport Number</Form.Label>
-                            <Form.Control
-                                type="text"
-                                value={spassport}
-                                onChange={(e) => setSpassport(e.target.value)}
-                            />
-                        </Form.Group>
 
                         <Form.Group controlId="fname" className="mb-4">
                             <Form.Label>Father Name</Form.Label>
@@ -417,7 +305,7 @@ const CreateNote = () => {
                         <Form.Group controlId="fdob" className="mb-4">
                             <Form.Label>Fathers DOB</Form.Label>
                             <Form.Control
-                                type="date"
+                                type="text"
                                 value={fdob}
 
                                 onChange={(e) => setFdob(e.target.value)}
@@ -430,15 +318,6 @@ const CreateNote = () => {
                                 value={fdod}
 
                                 onChange={(e) => setFdod(e.target.value)}
-                            />
-                        </Form.Group>
-                        <Form.Group controlId="fmobile" className="mb-4">
-                            <Form.Label>Father's Mobile Number</Form.Label>
-                            <Form.Control
-                                type="number"
-                                value={fmobile}
-
-                                onChange={(e) => setFmobile(e.target.value)}
                             />
                         </Form.Group>
                         <Form.Group controlId="faddress" className="mb-4">
@@ -458,15 +337,6 @@ const CreateNote = () => {
                                 onChange={(e) => setFoccupation(e.target.value)}
                             />
                         </Form.Group>
-                        <Form.Group controlId="fpassportnumber" className="mb-4">
-                            <Form.Label>Father's Passport Number</Form.Label>
-                            <Form.Control
-                                type="number"
-                                value={fpassportnumber}
-
-                                onChange={(e) => setFpassportnumber(e.target.value)}
-                            />
-                        </Form.Group>
                         <Form.Group controlId="mname" className="mb-4">
                             <Form.Label>Mother's Name</Form.Label>
                             <Form.Control
@@ -479,7 +349,7 @@ const CreateNote = () => {
                         <Form.Group controlId="mdob" className="mb-4">
                             <Form.Label>Mother's DOB</Form.Label>
                             <Form.Control
-                                type="date"
+                                type="text"
                                 value={mdob}
                                 onChange={(e) => setMdob(e.target.value)}
                             />
@@ -492,16 +362,6 @@ const CreateNote = () => {
                                 onChange={(e) => setMdod(e.target.value)}
                             />
                         </Form.Group>
-                        <Form.Group controlId="mmobile" className="mb-4">
-                            <Form.Label>Mother's Mobile</Form.Label>
-                            <Form.Control
-                                type="number"
-                                value={mmobile}
-
-                                onChange={(e) => setMmobile(e.target.value)}
-                            />
-                        </Form.Group>
-
                         <Form.Group controlId="maddress" className="mb-4">
                             <Form.Label>Mother's Address</Form.Label>
                             <Form.Control
@@ -520,175 +380,31 @@ const CreateNote = () => {
                                 onChange={(e) => setMoccupation(e.target.value)}
                             />
                         </Form.Group>
-                        <Form.Group controlId="mpassportnumber" className="mb-4">
-                            <Form.Label>Mother's Passport</Form.Label>
-                            <Form.Control
-                                type="text"
-                                value={mpassportnumber}
-
-                                onChange={(e) => setMpassportnumber(e.target.value)}
-                            />
-                        </Form.Group>
                         <Form.Group controlId="childname" className="mb-4">
-                            <Form.Label>Children Name</Form.Label>
+                            <Form.Label>Children Details</Form.Label>
                             <Form.Control
                                 as="textarea"
                                 value={childname}
-
+                                placeholder="1-Name DOB Address Mobile Occupation"
                                 onChange={(e) => setChildname(e.target.value)}
                             />
                         </Form.Group>
-                        <Form.Group controlId="childdob" className="mb-4">
-                            <Form.Label>Children DOB</Form.Label>
-                            <Form.Control
-                                as="textarea"
-                                value={childdob}
-
-                                onChange={(e) => setChilddob(e.target.value)}
-                            />
-                        </Form.Group>
-                        <Form.Group controlId="childmobile" className="mb-4">
-                            <Form.Label>Children Mobile</Form.Label>
-                            <Form.Control
-                                as="textarea"
-                                value={childmobile}
-
-                                onChange={(e) => setChildmobile(e.target.value)}
-                            />
-                        </Form.Group>
-                        <Form.Group controlId="childaddress" className="mb-4">
-                            <Form.Label>Children Address</Form.Label>
-                            <Form.Control
-                                as="textarea"
-                                value={childaddress}
-
-                                onChange={(e) => setChildaddress(e.target.value)}
-                            />
-                        </Form.Group>
-                        <Form.Group controlId="childoccupation" className="mb-4">
-                            <Form.Label>Children Occupation</Form.Label>
-                            <Form.Control
-                                as="textarea"
-                                value={childoccupation}
-
-                                onChange={(e) => setChildoccupation(e.target.value)}
-                            />
-                        </Form.Group>
-                        <Form.Group controlId="childpassportnumber" className="mb-4">
-                            <Form.Label>Children Passport Number</Form.Label>
-                            <Form.Control
-                                as="textarea"
-                                value={childpassportnumber}
-
-                                onChange={(e) => setChildpassportnumber(e.target.value)}
-                            />
-                        </Form.Group>
                         <Form.Group controlId="broname" className="mb-4">
-                            <Form.Label>Brother's Name</Form.Label>
+                            <Form.Label>Brother's Details</Form.Label>
                             <Form.Control
                                 as="textarea"
                                 value={broname}
-
+                                placeholder="1-Name DOB Address Mobile Occupation"
                                 onChange={(e) => setBroname(e.target.value)}
                             />
                         </Form.Group>
-                        <Form.Group controlId="brodob" className="mb-4">
-                            <Form.Label>Brothers's DOB</Form.Label>
-                            <Form.Control
-                                as="textarea"
-                                value={brodob}
-
-                                onChange={(e) => setBrodob(e.target.value)}
-                            />
-                        </Form.Group>
-                        <Form.Group controlId="bromobile" className="mb-4">
-                            <Form.Label>Brothers's Mobile</Form.Label>
-                            <Form.Control
-                                as="textarea"
-                                value={bromobile}
-
-                                onChange={(e) => setBromobile(e.target.value)}
-                            />
-                        </Form.Group>
-                        <Form.Group controlId="broaddress" className="mb-4">
-                            <Form.Label>Brother's Address</Form.Label>
-                            <Form.Control
-                                as="textarea"
-                                value={broaddress}
-
-                                onChange={(e) => setBroaddress(e.target.value)}
-                            />
-                        </Form.Group>
-                        <Form.Group controlId="brooccupation" className="mb-4">
-                            <Form.Label>Brother's Occupation</Form.Label>
-                            <Form.Control
-                                as="textarea"
-                                value={brooccupation}
-
-                                onChange={(e) => setBrooccupation(e.target.value)}
-                            />
-                        </Form.Group>
-                        <Form.Group controlId="bropassportnumber" className="mb-4">
-                            <Form.Label>Brother's Passport Number</Form.Label>
-                            <Form.Control
-                                as="textarea"
-                                value={bropassportnumber}
-
-                                onChange={(e) => setBropassportnumber(e.target.value)}
-                            />
-                        </Form.Group>
                         <Form.Group controlId="sisname" className="mb-4">
-                            <Form.Label>Sister's Name</Form.Label>
+                            <Form.Label>Sister's Details</Form.Label>
                             <Form.Control
                                 as="textarea"
                                 value={sisname}
-
+                                placeholder="1-Name DOB Address Mobile Occupation"
                                 onChange={(e) => setSisname(e.target.value)}
-                            />
-                        </Form.Group>
-                        <Form.Group controlId="sisdob" className="mb-4">
-                            <Form.Label>Sister's DOB</Form.Label>
-                            <Form.Control
-                                as="textarea"
-                                value={sisdob}
-
-                                onChange={(e) => setSisdob(e.target.value)}
-                            />
-                        </Form.Group>
-                        <Form.Group controlId="sismobile" className="mb-4">
-                            <Form.Label>Sister's Mobile</Form.Label>
-                            <Form.Control
-                                as="textarea"
-                                value={sismobile}
-
-                                onChange={(e) => setSismobile(e.target.value)}
-                            />
-                        </Form.Group>
-                        <Form.Group controlId="sisaddress" className="mb-4">
-                            <Form.Label>Sister's Address</Form.Label>
-                            <Form.Control
-                                as="textarea"
-                                value={sisaddress}
-
-                                onChange={(e) => setSisaddress(e.target.value)}
-                            />
-                        </Form.Group>
-                        <Form.Group controlId="sisoccupation" className="mb-4">
-                            <Form.Label>Sister's Occupation</Form.Label>
-                            <Form.Control
-                                as="textarea"
-                                value={sisoccupation}
-
-                                onChange={(e) => setSisoccupation(e.target.value)}
-                            />
-                        </Form.Group>
-                        <Form.Group controlId="sispassportnumber" className="mb-4">
-                            <Form.Label>Sister's Passport Number</Form.Label>
-                            <Form.Control
-                                as="textarea"
-                                value={sispassportnumber}
-
-                                onChange={(e) => setSispassportnumber(e.target.value)}
                             />
                         </Form.Group>
                         <Form.Group controlId="spname" className="mb-4">
@@ -696,7 +412,6 @@ const CreateNote = () => {
                             <Form.Control
                                 as="textarea"
                                 value={spname}
-
                                 onChange={(e) => setSpname(e.target.value)}
                             />
                         </Form.Group>
@@ -707,15 +422,6 @@ const CreateNote = () => {
                                 value={sprelationship}
 
                                 onChange={(e) => setSprelationship(e.target.value)}
-                            />
-                        </Form.Group>
-                        <Form.Group controlId="spmobile" className="mb-4">
-                            <Form.Label>Sponsor Mobile</Form.Label>
-                            <Form.Control
-                                as="textarea"
-                                value={spmobile}
-
-                                onChange={(e) => setSpmobile(e.target.value)}
                             />
                         </Form.Group>
                         <Form.Group controlId="spaddress" className="mb-4">
@@ -734,15 +440,6 @@ const CreateNote = () => {
                                 value={spoccupation}
 
                                 onChange={(e) => setSpoccupation(e.target.value)}
-                            />
-                        </Form.Group>
-                        <Form.Group controlId="sppassportnumber" className="mb-4">
-                            <Form.Label>Sponsor Passport Number</Form.Label>
-                            <Form.Control
-                                as="textarea"
-                                value={sppassportnumber}
-
-                                onChange={(e) => setSppassportnumber(e.target.value)}
                             />
                         </Form.Group>
                         {loading && <Loading size={50} />}

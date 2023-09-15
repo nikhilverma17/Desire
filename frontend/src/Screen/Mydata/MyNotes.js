@@ -56,7 +56,11 @@ function MyNotes({ search }) {
                 <p className='list-item'><b>Mobile:</b> ${note.cmobile}</p>
                 <p className='list-item'><b>Email:</b> ${note.cemail}</p>
                 <p className='list-item'><b>DOB:</b> ${note.cdob}</p>
-                <p className='list-item'><b>Address:</b> ${note.caddress}</p>
+                <p className='list-item'><b>Address:</b> ${note.caddress}</p>  
+        </div>
+         <div class="column1">
+         <br></br>
+
                 <p className='list-item'><b>Occupation:</b> ${note.coccupation}</p>
                 <p className='list-item'><b>Passport Number:</b> ${note.cpassportnumber}</p>
                 <p className='list-item'><b>Marital Status:</b> ${note.cmaritalstatus}</p>
@@ -66,12 +70,9 @@ function MyNotes({ search }) {
                 <h2>Spouse Details</h2>
                                                     
                 <p className='list-item'><b>Name:</b> ${note.sname}</p>
-                <p className='list-item'><b>Mobile:</b> ${note.smobile}</p>
-                <p className='list-item'><b>Email:</b> ${note.semail}</p>
                 <p className='list-item'><b>DOB:</b> ${note.sdob}</p>
                 <p className='list-item'><b>Address:</b> ${note.saddress}</p>
                 <p className='list-item'><b>Occupation:</b> ${note.soccupation}</p>
-                <p className='list-item'><b>Passport Number:</b> ${note.spassport}</p>
                                                     
         </div>
     </div>
@@ -79,22 +80,26 @@ function MyNotes({ search }) {
         <div class="column1">
                 <h2>Father's Details</h2>                               
                 <p className='list-item'><b>Name:</b> ${note.fname}</p>
-                <p className='list-item'><b>Mobile:</b> ${note.fmobile}</p>
                 <p className='list-item'><b>DOB:</b> ${note.fdob}</p>
                 <p className='list-item'><b>DOD:</b> ${note.fdod}</p>
                 <p className='list-item'><b>Address:</b> ${note.faddress}</p>
                 <p className='list-item'><b>Occupation:</b> ${note.foccupation}</p>
-                <p className='list-item'><b>Passport Number:</b> ${note.fpassportnumber}</p>                                                                     
+                                                                    
         </div>
         <div class="column1">    
                 <h2>Mother's Deatils</h2>                                                   
                 <p className='list-item'><b>Name:</b> ${note.mname}</p>
-                <p className='list-item'><b>Mobile:</b> ${note.mmobile}</p>
                 <p className='list-item'><b>DOB:</b> ${note.fdob}</p>
                 <p className='list-item'><b>DOD:</b> ${note.fdod}</p>
                 <p className='list-item'><b>Address:</b> ${note.maddress}</p>
-                <p className='list-item'><b>Occupation:</b> ${note.moccupation}</p>
-                <p className='list-item'><b>Passport Number:</b> ${note.mpassportnumber}</p>                                                    
+                <p className='list-item'><b>Occupation:</b> ${note.moccupation}</p>                                                  
+        </div>
+         <div class="column1">
+               <h2>Sponsor's Deatils</h2>
+                 <p className='list-item'><b>Name:</b> ${note.spname}</p>
+                 <p className='list-item'><b>Relationship:</b> ${note.sprelationship}</p>
+                 <p className='list-item'><b>Country:</b> ${note.spaddress}</p>
+                 <p className='list-item'><b>Occupation:</b> ${note.spoccupation}</p>                                                                                                                
         </div>
     </div>
     <div class="table-container1">
@@ -102,44 +107,18 @@ function MyNotes({ search }) {
                 <h2>Brother's Details</h2>
                                                     
                     <p className='list-item'><b>Name:</b> ${note.broname}</p>
-                    <p className='list-item'><b>Mobile:</b> ${note.bromobile}</p>
-                    <p className='list-item'><b>DOB:</b> ${note.brodob}</p>
-                    <p className='list-item'><b>Address:</b> ${note.broaddress}</p>
-                    <p className='list-item'><b>Occupation:</b> ${note.brooccupation}</p>
-                    <p className='list-item'><b>Passport Number:</b>${note.bropassportnumber}</p>
 
                                                                                                                          
         </div>
         <div class="column1">    
                 <h2>Sister's Deatils</h2>
-                    <p className='list-item'><b>Name:</b> ${note.sisname}</p>
-                    <p className='list-item'><b>Mobile:</b> ${note.sismobile}</p>
-                    <p className='list-item'><b>DOB:</b> ${note.sisdob}</p>
-                    <p className='list-item'><b>Address:</b> ${note.sisaddress}</p>
-                    <p className='list-item'><b>Occupation:</b> ${note.sisoccupation}</p>
-                    <p className='list-item'><b>Passport Number:</b> ${note.sispassportnumber}</p>                                                                       
+                    <p className='list-item'><b>Name:</b> ${note.sisname}</p>                                                                       
         </div>
-    </div>
-    <div class="table-container1">
-        <div class="column1">
+         <div class="column1">
                 <h2>Children's Details</h2>
-                                                    
+
                     <p className='list-item'><b>Name:</b> ${note.childname}</p>
-                    <p className='list-item'><b>Mobile:</b> ${note.childmobile}</p>
-                    <p className='list-item'><b>DOB:</b> ${note.childdob}</p>
-                    <p className='list-item'><b>Address:</b> ${note.childaddress}</p>
-                    <p className='list-item'><b>Occupation:</b> ${note.childoccupation}</p>
-                    <p className='list-item'><b>Passport Number:</b> ${note.childpassportnumber}</p>
-        </div>                                     
-        <div class="column1">    
-               <h2>Sponsor's Deatils</h2>                                                  
-                 <p className='list-item'><b>Name:</b> ${note.spname}</p>
-                 <p className='list-item'><b>Mobile:</b> ${note.spmobile}</p>
-                 <p className='list-item'><b>Relationship:</b> ${note.sprelationship}</p>
-                 <p className='list-item'><b>Country:</b> ${note.spaddress}</p>
-                 <p className='list-item'><b>Occupation:</b> ${note.spoccupation}</p>
-                 <p className='list-item'><b>Passport Number:</b> ${note.sppassportnumber}</p>                                                                                                                  
-        </div>
+        </div> 
     </div>
 </div>
   `;
@@ -147,8 +126,8 @@ function MyNotes({ search }) {
 
         const opt = {
             margin: 10,
-            filename: `${note.title}.pdf`,
-            html2pdf: { scale: 2 },
+            filename: `${note.cname}.pdf`,
+            html2pdf: { scale: 1 },
             jsPDF: { unit: 'mm', format: 'a4', orientation: 'landscape' },
         };
 
@@ -216,7 +195,7 @@ function MyNotes({ search }) {
                                 <Card.Body>
                                     <blockquote className="blockquote mb-0">
                                         <div style={{ fontFamily: 'Arial, sans-serif', padding: '10px' }}>
-                                            
+
                                             <div className='flex-container' >
                                                 <div className='column'>
                                                     <h2>Applicant Deatils</h2>
@@ -226,6 +205,11 @@ function MyNotes({ search }) {
                                                         <li className='list-item'><b>Email:</b> {note.cemail}</li>
                                                         <li className='list-item'><b>DOB:</b> {note.cdob}</li>
                                                         <li className='list-item'><b>Address:</b> {note.caddress}</li>
+                                                    </ul>
+                                                </div>
+                                                <div className='column'>
+                                                    <br></br>
+                                                    <ul>
                                                         <li className='list-item'><b>Occupation:</b> {note.coccupation}</li>
                                                         <li className='list-item'><b>Passport Number:</b> {note.cpassportnumber}</li>
                                                         <li className='list-item'><b>Marital Status:</b> {note.cmaritalstatus}</li>
@@ -236,12 +220,9 @@ function MyNotes({ search }) {
                                                     <h2>Spouse Details</h2>
                                                     <ul>
                                                         <li className='list-item'><b>Name:</b> {note.sname}</li>
-                                                        <li className='list-item'><b>Mobile:</b> {note.smobile}</li>
-                                                        <li className='list-item'><b>Email:</b> {note.semail}</li>
                                                         <li className='list-item'><b>DOB:</b> {note.sdob}</li>
                                                         <li className='list-item'><b>Address:</b> {note.saddress}</li>
                                                         <li className='list-item'><b>Occupation:</b> {note.soccupation}</li>
-                                                        <li className='list-item'><b>Passport Number:</b> {note.spassport}</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -250,12 +231,10 @@ function MyNotes({ search }) {
                                                     <h2>Father's Details</h2>
                                                     <ul>
                                                         <li className='list-item'><b>Name:</b> {note.fname}</li>
-                                                        <li className='list-item'><b>Mobile:</b> {note.fmobile}</li>
                                                         <li className='list-item'><b>DOB:</b> {note.fdob}</li>
                                                         <li className='list-item'><b>DOD:</b> {note.fdod}</li>
                                                         <li className='list-item'><b>Address:</b> {note.faddress}</li>
                                                         <li className='list-item'><b>Occupation:</b> {note.foccupation}</li>
-                                                        <li className='list-item'><b>Passport Number:</b> {note.fpassportnumber}</li>
 
                                                     </ul>
                                                 </div>
@@ -263,12 +242,19 @@ function MyNotes({ search }) {
                                                     <h2>Mother's Deatils</h2>
                                                     <ul>
                                                         <li className='list-item'><b>Name:</b> {note.mname}</li>
-                                                        <li className='list-item'><b>Mobile:</b> {note.mmobile}</li>
                                                         <li className='list-item'><b>DOB:</b> {note.fdob}</li>
                                                         <li className='list-item'><b>DOD:</b> {note.fdod}</li>
                                                         <li className='list-item'><b>Address:</b> {note.maddress}</li>
                                                         <li className='list-item'><b>Occupation:</b> {note.moccupation}</li>
-                                                        <li className='list-item'><b>Passport Number:</b> {note.mpassportnumber}</li>
+                                                    </ul>
+                                                </div>
+                                                <div className='column'>
+                                                    <h2>Sponsor's Deatils</h2>
+                                                    <ul>
+                                                        <li className='list-item'><b>Name:</b> {note.spname}</li>
+                                                        <li className='list-item'><b>Relationship:</b> {note.sprelationship}</li>
+                                                        <li className='list-item'><b>Country:</b> {note.spaddress}</li>
+                                                        <li className='list-item'><b>Occupation:</b> {note.spoccupation}</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -277,11 +263,6 @@ function MyNotes({ search }) {
                                                     <h2>Brother's Details</h2>
                                                     <ul>
                                                         <li className='list-item'><b>Name:</b> {note.broname}</li>
-                                                        <li className='list-item'><b>Mobile:</b> {note.bromobile}</li>
-                                                        <li className='list-item'><b>DOB:</b> {note.brodob}</li>
-                                                        <li className='list-item'><b>Address:</b> {note.broaddress}</li>
-                                                        <li className='list-item'><b>Occupation:</b> {note.brooccupation}</li>
-                                                        <li className='list-item'><b>Passport Number:</b> {note.bropassportnumber}</li>
 
                                                     </ul>
                                                 </div>
@@ -289,36 +270,12 @@ function MyNotes({ search }) {
                                                     <h2>Sister's Deatils</h2>
                                                     <ul>
                                                         <li className='list-item'><b>Name:</b> {note.sisname}</li>
-                                                        <li className='list-item'><b>Mobile:</b> {note.sismobile}</li>
-                                                        <li className='list-item'><b>DOB:</b> {note.sisdob}</li>
-                                                        <li className='list-item'><b>Address:</b> {note.sisaddress}</li>
-                                                        <li className='list-item'><b>Occupation:</b> {note.sisoccupation}</li>
-                                                        <li className='list-item'><b>Passport Number:</b> {note.sispassportnumber}</li>
                                                     </ul>
                                                 </div>
-                                            </div>
-                                            <div className='flex-container' >
                                                 <div className='column'>
                                                     <h2>Children's Details</h2>
                                                     <ul>
                                                         <li className='list-item'><b>Name:</b> {note.childname}</li>
-                                                        <li className='list-item'><b>Mobile:</b> {note.childmobile}</li>
-                                                        <li className='list-item'><b>DOB:</b> {note.childdob}</li>
-                                                        <li className='list-item'><b>Address:</b> {note.childaddress}</li>
-                                                        <li className='list-item'><b>Occupation:</b> {note.childoccupation}</li>
-                                                        <li className='list-item'><b>Passport Number:</b> {note.childpassportnumber}</li>
-
-                                                    </ul>
-                                                </div>
-                                                <div className='column'>
-                                                    <h2>Sponsor's Deatils</h2>
-                                                    <ul>
-                                                        <li className='list-item'><b>Name:</b> {note.spname}</li>
-                                                        <li className='list-item'><b>Mobile:</b> {note.spmobile}</li>
-                                                        <li className='list-item'><b>Relationship:</b> {note.sprelationship}</li>
-                                                        <li className='list-item'><b>Country:</b> {note.spaddress}</li>
-                                                        <li className='list-item'><b>Occupation:</b> {note.spoccupation}</li>
-                                                        <li className='list-item'><b>Passport Number:</b> {note.sppassportnumber}</li>
                                                     </ul>
                                                 </div>
                                             </div>

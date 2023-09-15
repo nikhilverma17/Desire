@@ -36,7 +36,7 @@ function LoginScreen() {
                 {error && <ErrorMessage variant="danger">{error}</ErrorMessage>}
                 {loading && <Loading/> }
                 <Form onSubmit={submitHandler}>
-                    <Form.Group controlId="formBasicEmail">
+                    <Form.Group  controlId="formBasicEmail">
                         <Form.Label>Email address</Form.Label>
                         <Form.Control type="email" value={email} placeholder="Enter email" onChange={(e) => setEmail(e.target.value)} />
                     </Form.Group>
